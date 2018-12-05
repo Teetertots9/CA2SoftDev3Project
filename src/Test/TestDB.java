@@ -1,9 +1,6 @@
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+//Made By Andrew Teeters, X00139120
+
 package Test;
 
 import Database.*;
@@ -15,16 +12,12 @@ public class TestDB {
 
     PersistenceOperations po = new PersistenceOperations();
     Scanner in = new Scanner(System.in);
-    String bufferSt = "";
     int befferInt = 0;
     double bufferDou = 0.0;
 
     public static void main(String[] args) {
         TestDB test1 = new TestDB();
         Scanner in = new Scanner(System.in);
-        String bufferSt = "";
-        int befferInt = 0;
-        double bufferDou = 0.0;
         EmployeeOperations eo = new EmployeeOperations();
         eo.openDB();
         eo.dropCustomerSequence();

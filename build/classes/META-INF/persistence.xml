@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+//
+//Comment out the Persistence Unit that you are not using at the time.
+//
 <persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
- <persistence-unit name="SDEV3CA2PUHOME" transaction-type="RESOURCE_LOCAL">
+ /*<persistence-unit name="SDEV3CA2PUHOME" transaction-type="RESOURCE_LOCAL">
     <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
     <class>Classes.Customer</class>
     <class>Classes.Employee</class>
@@ -13,8 +16,22 @@
       <property name="javax.persistence.jdbc.driver" value="oracle.jdbc.OracleDriver"/>
       <property name="javax.persistence.jdbc.password" value="poppop00"/>
     </properties>
-  </persistence-unit> 
- /* <persistence-unit name="SDEV3CA2PUCOLLEGE" transaction-type="RESOURCE_LOCAL">
+  </persistence-unit> */ 
+  /*<persistence-unit name="SDEV3CA2PUHOME2" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>Classes.Customer</class>
+    <class>Classes.Employee</class>
+    <class>Classes.FullTimeEmployee</class>
+    <class>Classes.PartTimeEmployee</class>
+    <class>Classes.Manager</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@localhost:1521:XE"/>
+      <property name="javax.persistence.jdbc.user" value="hr"/>
+      <property name="javax.persistence.jdbc.driver" value="oracle.jdbc.OracleDriver"/>
+      <property name="javax.persistence.jdbc.password" value="passhr"/>
+    </properties>
+  </persistence-unit> */ 
+  <persistence-unit name="SDEV3CA2PUCOLLEGE" transaction-type="RESOURCE_LOCAL">
     <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
     <class>Classes.Customer</class>
     <class>Classes.Employee</class>
@@ -27,5 +44,5 @@
       <property name="javax.persistence.jdbc.driver" value="oracle.jdbc.OracleDriver"/>
       <property name="javax.persistence.jdbc.password" value="db24Nov97"/>
     </properties>
-  </persistence-unit> */
+  </persistence-unit> 
 </persistence>

@@ -18,11 +18,14 @@ public class PersistenceOperations {
     EntityManager em;
 
     public PersistenceOperations() {
-       // emf = Persistence.createEntityManagerFactory("SDEV3CA2PUCOLLEGE");
-        //em = emf.createEntityManager();
-
-        emf = Persistence.createEntityManagerFactory("SDEV3CA2PUHOME");
+        emf = Persistence.createEntityManagerFactory("SDEV3CA2PUCOLLEGE");
         em = emf.createEntityManager();
+
+      //  emf = Persistence.createEntityManagerFactory("SDEV3CA2PUHOME");
+      //  em = emf.createEntityManager();
+      
+      //  emf = Persistence.createEntityManagerFactory("SDEV3CA2PUHOME2");
+      //  em = emf.createEntityManager();
     }
 
     public void showAllManagers() {
